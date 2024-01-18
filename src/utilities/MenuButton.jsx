@@ -2,7 +2,7 @@ import Modal from "./Modal";
 
 function MenuButton({ icon, title, linkContent, isMenuOpen }) {
   return (
-    <button className=" w-full h-[7rem] group ">
+    <button className=" w-full h-[7rem] group active:bg-transparent focus:outline-none ">
       <div className="sidebar-icon">
         <img className=" scale-75" src={icon} alt="img" />
         <span className={`sidebar-tooltip z-10 lmobile:group-hover:scale-100 `}>
