@@ -4,3 +4,9 @@
   max-width: 2400px;
   text-align: center;
 }
+.App::-webkit-scrollbar {
+  display: none;
+}
+.App::-webkit-scrollbar-thumb {
+  display: none;
+}

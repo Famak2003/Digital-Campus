@@ -1,16 +1,16 @@
 import ControlBar from "./components/ControlBar";
 import Logo from "./components/logo/Logo";
-import Menu from "./components/Menu/Menu";
+import Menu from "./components/Menu";
 import "./index.css";
 import "./App.css";
-import DisplayComp from "./components/DisplayComp";
+import MapDisplay from "./components/MapDisplay";
 
 function App() {
   return (
-    <div className="App relative h-[63rem] font-raleway flex ">
+    <div className="App relative h-[100vh] font-raleway flex ">
       <Logo />
       <Menu />
-      <DisplayComp />
+      <MapDisplay />
       <ControlBar />
     </div>
   );

@@ -5,6 +5,9 @@
 :root {
   --deep-gray: #111827;
   --gray: #4b5563;
+  --light-gray: #555;
+  --white: #fff;
+  --black: #000000;
 }
 
 html {
@@ -28,13 +31,38 @@ code {
   .sidebar-icon {
     @apply relative mx-auto mb-5 mt-2 flex h-14 w-14
      cursor-pointer items-center justify-center rounded-3xl
-      bg-gray-800 text-green-500 shadow-lg transition-all
-       duration-200 ease-linear hover:h-16 hover:w-16 hover:rounded-xl hover:bg-green-600
-        hover:text-white;
+       text-green-500 shadow-lg transition-all bg-[var(--white)]
+       duration-200 ease-linear group-hover:h-16 group-hover:w-16 group-hover:rounded-xl group-hover:bg-green-600
+        group-hover:text-white;
   }
   .sidebar-tooltip {
     @apply absolute left-14 m-2 w-auto min-w-max origin-left 
     scale-0 rounded-md bg-gray-900 p-2
     text-lg font-bold text-white shadow-md transition-all duration-100;
+  }
+  .Text24px {
+    @apply text-[2.4rem];
+  }
+  .Text16px {
+    @apply text-[1.6rem];
+  }
+  .Text14px {
+    @apply text-[1.4rem];
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  html {
+    font-size: 48%;
   }
 }

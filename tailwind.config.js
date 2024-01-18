@@ -7,7 +7,9 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
       },
       screens: {
-        mobile: "420px",
+        smobile: "300px",
+        mobile: "431px",
+        lmobile: "500px",
       },
     },
   },
